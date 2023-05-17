@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Franqueado Altas Sports</title>
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="https://altasports.com.br/site/views/customerRegistration/assets/img/icon.png">
+    <!-- Import Boootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Bowlby One"
+      rel="stylesheet"
+    />
+  <!-- Import Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+		integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+		integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+    }
+    .title {
+      color: #00a0e2;
+      font-family: "Bowlby One";
+      font-weight: bold;
+    }
+    nav {
+      background-color: white;
+    }
+
+    li {
+      font-weight: 650;
+      padding: 10px;
+    }
+
+    .nav-link {
+      padding-top: 25px;
+    }
+
+    .button-franqueado {
+      text-align: center;
+      text-justify: center;
+      background-color: #504ce4;
+      color: white;
+      border-radius: 2.875rem;
+      font-weight: 650;
+      font-size: small;
+    }
+    .button-text-2{
+      font-size: 0.9vw; 
+      text-align: center;
+    }
+    .btn-nav {
+      margin-top: 15px;
+      width: 213px;
+      height: 45px;
+    }
+    .btn-carousel{
+      width: 273px;
+      height: 65px;
+    }
+    .c-item {
+      height: 600px;
+    }
+    .c-img {
+      height: 100%;
+      object-fit: cover;
+    }
+    .info-text{
+      font-size: 1.3rem;
+    }
+    .cont-2{
+      height: 28rem;
+      background-image: url('img/background\ azul.jpg');
+      background-size: cover;
+      background-position: center center;
+    }
+    .info-text-2 {
+      font-size: medium;
+      text-align: center;
+      padding: 15% 20%;
+    }
+    .cont-3{
+      background-image: url('https://altasports.com.br/futurosite/img/movement.jpg'); 
+      height: 50rem; 
+      background-size: 
+      cover; 
+      object-fit: cover;
+    }
+    .info-text-4 {
+      font-size: large;
+      text-align: center;
+      padding: 12% 22%;
+    }
+    .text-container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: left;
+    }
+
+    #hero-carousel {
+        padding: 0;
+    }
+    .c-item{
+      height: 600px;
+    }
+    .c-img{
+      height: 100%;
+      object-fit: cover;
+    }
+    .carousel-caption {
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .info-3{
+      text-align: left !important;
+      margin-bottom: 0px;
+      padding-left: 50px;
+    }
+
+    .info-light-3{
+      padding-left: 50px;
+      text-align: left !important;
+      color: #fff; 
+      font-weight: 200;
+      font-size: 1.5rem;
+    }
+    .logo-qs{
+      height: 100px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    .text-qs{
+      height: 100px;
+      width: 100%;
+      position: relative;
+      display: flex;
+      vertical-align: center;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: -15rem;
+      gap: 2rem;
+    }
+    .cont-4{
+      background-image: url('img/background azul.jpg'); 
+      background-size: cover; 
+      background-position: center;
+    }
+    .content {
+      opacity: 1;
+    }
+    .card {
+      border-radius: 16px;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      cursor: pointer;
+      min-width: 19.75rem !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.5s ease-out;
+      background-image: linear-gradient(#b8b4b4, #b8b4b4);
+      transition: all 0.1s;
+      margin-bottom: 0px;
+      height: 30rem;
+    }
+    .card .content .social-media{
+      opacity: 0;
+    }
+    .card:hover .content .social-media{
+      opacity: 1;
+      transition: opacity .2s ease-out;
+      -moz-transition: opacity .2s ease-out;
+      -webkit-transition: opacity .2s ease-out;
+      -o-transition: opacity .2s ease-out;
+    }
+    .card:hover {
+      background-image: linear-gradient(#080434, #080434);
+      height: 35rem;
+      transition: all 1s ease-in-out;
+      transform: scale(1.1);
+    }
+    .hr-sm{
+      margin-top: 5rem;
+    }
+
+    .logo-img{
+      margin-bottom: 4rem;
+    }
+    .card .img {
+      width: 70%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70px;
+      background-size: cover;
+      background-position: center;
+      transition: all 0.9s;
+      z-index: 2;
+      position: relative;
+      opacity: 0.8;
+    }
+    .card .img span {
+      text-transform: uppercase;
+      font-size: 10px;
+      font-weight: 100;
+      font-style: italic;
+      transition: all 0.5s;
+    }
+    .card:hover .img {
+      filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='blue-tint'><feColorMatrix type='matrix' values='0 0 0 0 0.0 0 0 0 0 0.63 0 0 0 0 0.89 0 0 0 1 0'/></filter></svg>#blue-tint") !important;
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    .card:hover .img span {
+      font-size: 10px;
+    }
+    .card .content {
+      padding: 20px;
+      opacity: 1;
+      transition: all 0.9s;
+      position: relative;
+      box-sizing: border-box;
+      overflow: hidden;
+      transform: translateY(0);
+    }
+    .card:hover .content {
+      padding: 20px;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .card .content p {
+      margin: 0;
+    }
+    .card .content .title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .card .content .desc {
+      font-size: 13px;
+      font-weight: 100;
+      opacity: 0.8;
+      margin-top: 0px;
+    }
+    .card:hover .content .desc {
+      transition: all 0.9s;
+      font-size: 13px;
+      font-weight: 100;
+      opacity: 0.8;
+      margin-top: 0px;
+    }
+    .card .arrow {
+      padding: 15px;
+      transform: rotate(-180deg);
+      transition: all 0.5s;
+    }
+    .card:hover .arrow {
+      transform: rotate(0);
+      filter: brightness(0) invert(1);
+    }
+    .card .arrow span {
+      font-size: 24px;
+    }
+    .card-icons{
+      padding: 8px;
+      color: #fff;
+    }
+    .social-media{
+      padding: 20px 20px 0 0;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .flex-item {
+      border-radius: 1000px;
+      background: #f8f4f4;
+      padding: 5px;
+      width: 20rem;
+      height: 20rem;
+      margin-top: 10px;
+      line-height: 150px;
+      color: white;
+      font-weight: bold;
+      font-size: 3em;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .flex-item:hover {
+      background: #f8f4f4c9;
+    }
+    .pc-icon{
+    padding-top: 15%;
+    color: #00a0e2
+    }
+    .circle-text {
+      height: 1rem;
+      width: 100%;
+      color: grey;
+      font-size: 1rem;
+    }
+    .rounded-card{
+      max-width: 450px; 
+      max-height: 400px; 
+      display: inline;
+    }
+    .cont-5{
+        height: 44rem;
+        background-image: url('img/background\ azul.jpg');
+        background-size: cover;
+        background-position: center center;
+    }
+    .cont-6{
+      max-height: 180rem;
+      background-color: white;
+    }
+    .cont-7{
+      background-color: white; 
+      padding-top: 6rem; 
+      padding-bottom: 6rem;
+    }
+    .cont-8{
+      max-height: 450rem; 
+      background-color: white;
+      padding-bottom: 6rem;
+    }
+    .cont-9{
+        background-color: #f6f6f6; 
+        max-height: 45rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .cont-10{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 50rem; width: 100%; 
+        background-image: url('img/ZTA_eqG1-modified\ \(1\).jpeg');
+    }
+    .img-laptop{
+      padding: 60px;
+    }
+    .rounded-card {
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+
+/* 
+Device = Desktops 
+Screen = 1281px to higher resolution desktops 
+*/
+
+@media (min-width: 1281px) {
+  .alta-logo-s3{
+    transform: scale(1.3);
+  }
+  .info-text{
+    padding: 1rem 5rem 0 0;
+  }
+  .logo-qs{
+    transform: scale(0.7);
+  }
+}
+
+/* 
+Device = Laptops, Desktops
+Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1140px) and (max-width: 1280px) {
+.alta-logo-s3{
+    transform: scale(1.3);
+  }
+.info-light-3{
+      font-size: 1.3rem;
+    }
+.logo-qs{
+    transform: scale(0.7);
+  }
+}
+
+/* 
+Device = Tablets, Ipads (portrait)
+Screen = B/w 768px to 1024px
+*/
+
+@media (max-width: 1199px) {
+  .info-3{ padding-top: 60px;}
+  .alta-logo-s3{
+    transform: scale(1.0);
+  }
+  .info-light-3{
+      font-size: 1.2rem;
+    }
+  .personalizados-tab{
+    padding: 0 10%;
+  }
+}
+  </style>
+
+
+  <body>
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light static-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://altasports.com.br/futurosite/img/logo.png"
+            alt="..."
+            height="60"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#quem-somos">QUEM SOMOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#nossas-marcas">NOSSAS MARCAS</a>
+            </li>
+            <li>
+              <a href="#cadastro">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg button-franqueado btn-nav"
+                >
+                  SEJA UM REVENDEDOR
+                </button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+
+
+    <!-- Carousel -->
+<section id="carousel">
+  <div class="container-fluid">
+      <div class="row">
+        <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true"
+              aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item c-item active">
+              <img src="https://altasports.com.br/futurosite/img/background3.jpg" class="d-block w-100 c-img" alt="...">
+              <div class="text-container col-lg-11">
+                <h1 class="display-4 title">
+                  ESTAMOS AQUI <br>
+                  PARA INSPIRAR <br>
+                  A SUA PRÓXIMA <br>
+                  VOLTA!
+                  <br>
+                  <br>
+                  <a href="#cadastro">
+                    <button type="button" class="btn btn-primary btn-lg button-franqueado btn-carousel">
+                      SEJA UM REVENDEDOR
+                    </button>
+                  </a>
+                </h1>
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <img src="https://altasports.com.br/futurosite/img/background.jpg" class="d-block w-100 c-img" alt="...">
+              <div class="text-container col-lg-11">
+                <h1 class="display-4 title">
+                  ESTAMOS AQUI <br>
+                  PARA INSPIRAR <br>
+                  A SUA PRÓXIMA <br>
+                  VOLTA!
+                  <br>
+                  <br>
+                  <a href="#cadastro">
+                    <button type="button" class="btn btn-primary btn-lg button-franqueado btn-carousel">
+                      SEJA UM REVENDEDOR
+                    </button>
+                  </a>
+                </h1>
+              </div>
+            </div>
+            <div class="carousel-item c-item">
+              <img src="https://altasports.com.br/futurosite/img/background2.jpg" class="d-block w-100 c-img" alt="...">
+              <div class="text-container col-lg-11">
+                <h1 class="display-4 title">
+                  ESTAMOS AQUI <br>
+                  PARA INSPIRAR <br>
+                  A SUA PRÓXIMA <br>
+                  VOLTA!
+                  <br>
+                  <br>
+                  <a href="#cadastro">
+                    <button type="button" class="btn btn-primary btn-lg button-franqueado btn-carousel">
+                      SEJA UM REVENDEDOR
+                    </button>
+                  </a>
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+</section>
+
+    <!-- Container 2 -->
+<section id="info-screen">
+  <div class="container-fluid cont-2">
+      <div class="row justify-content-center align-items-center h-100">
+        <div class="col-md-8">
+          <h1 class="info-text-2 text-center text-white info-1">
+            Com uma equipe dedicada em pesquisar, desenvolver e inovar em projetos, a Alta Sports, que nasceu da união entre a Silva Mattos e Star Racer possui cerca de 100 colaboradores alocados nas cidades de Mogi das Cruzes, São José dos Campos e Caçapava, que trabalham diariamente para entregar uma experiência positiva, eficiente e acima das expectativas dos nossos parceiros e clientes.
+          </h1>
+        </div>
+      </div>
+  </div>
+</section>
+
+    <!-- Container 3 -->
+<section id="presentation">
+  <div class="container-fluid cont-3">
+      <div class="row h-100 align-items-center">
+        <div class="col-xl-6 col-lg-12">
+          <p class="text-center text-md-left title display-4 info-3">
+            SOMOS <br>
+            APAIXONADOS <br>
+            PELA SUPERAÇÃO <br>
+            E ADRENALINA EM <br>
+            DUAS RODAS.
+          </p>
+          <h1 class="text-center text-md-left info-light-3">
+            <br> Contamos com os nossos <br> colaboradores, atletas, parceiros e <br>
+            clientes para entregar a excelência <br> aos que acreditam no nosso <br> propósito.
+          </h1>
+        </div>
+        <div class="col-xl-6">
+          <div class="d-flex justify-content-center">
+            <img src="https://altasports.com.br/futurosite/img/logoalta.png" alt="Logo" class="img-fluid alta-logo-s3">
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+
+    <!-- Container 4 -->
+<section id="quem-somos">
+      <div class="container-fluid cont-4">
+        <div class="row">
+          <div class="text-qs d-flex align-items-center">
+            <h1 class="title my-auto">QUEM SOMOS</h1>
+          </div>
+          <div class="col-md-6 col-md-6 justify-content-center align-items-center">
+            <div class="logo-qs">
+              <img src="img/SILVA MATTOS_LOGO-01.png" alt="logo silva mattos" class="img-fluid w-100 align-center">
+            </div>
+            <h1 class="info-text-4 text-white text-center">
+              Em busca da realização de sonhos os irmãos Mattos fizeram os primeiros investimentos nos anos 80, dando início às operações da Aero Sports Wear que mais tarde tornou-se ASW Racing.
+              <br>
+              <br>
+              Com a evolução do esporte e da empresa foram firmadas grandes parcerias. A Silva Mattos passou a ser, além de proprietária da marca ASW, distribuidora das principais marcas internacionais no país. Nos anos 2000, a ASW expandiu o portfólio e começou a distribuir equipamentos de bike.
+            </h1>
+          </div>
+          <div class="col-md-6 justify-content-center">
+            <div class="logo-qs">
+              <img src="img/STARACER_HORIZONTAL_COLOR.png" alt="logo star racer" class="img-fluid">
+            </div>
+            <h1 class="info-text-4 text-white text-center">
+              A Star Racer iniciou suas atividades em 1998 com a distribuição exclusiva da marca italiana Alpinestars no Brasil. Em 2016, a Bell Helmets passou a fazer parte do portfólio de produtos para segurança do motociclista.
+              <br>
+              <br>
+              Com mais de 20 anos de experiência em distribuição por todo o território nacional, a empresa se tornou uma grande referência no mercado de equipamentos para motociclismo.
+            </h1>
+          </div>
+        </div>
+      </div>
+</section>
+    
+    
+    <!-- Container 5 -->
+<section id="segmentos">
+  <div class="container-fluid cont-5">
+      <div class="row align-items-center">
+        <div class="text-qs d-flex">
+          <h1 class="title my-auto">SEGMENTOS EM QUE ATUAMOS</h1>
+        </div>
+				<div class="owl-carousel owl-theme justify-content-center align-items-center" >
+					<div class="item"><img src="img/1.jpg"></div>
+					<div class="item"><img src="img/2.jpg"></div>
+					<div class="item"><img src="img/3.jpg"></div>
+					<div class="item"><img src="img/1.jpg"></div>
+					<div class="item"><img src="img/2.jpg"></div>
+					<div class="item"><img src="img/3.jpg"></div>
+        </div>
+			</div>
+  </div>
+</section>
+
+
+ <!-- Container 6 -->
+ <section id="nossas-marcas">
+  <div class="container-fluid cont-6">
+    <div class="row">
+      <div class="card-container">
+        <div class="card card-1 col-lg-2 col-md-6 col-sm-12 col-12">
+              <div class="img logo-img">
+                          <img src="img/logoalpinestars.png" alt="logo alpinestars" style="transform: scale(0.15); filter: brightness(0) invert(1);">
+                      </div>
+      
+                      <div class="content">
+                          <span class="desc text-white">A Alpinestars, criada em
+                  1963, é a marca líder
+                  mundial em tecnologia de
+                  proteção paira prática de
+                  esportea	s à motor. A
+                  empresa acredita que o
+                  melhor design é fruto do
+                  aprendizado obtido sob
+                  condições extremas.</span>
+                  <div class="social-media">
+                  <hr class="hr-sm">
+                  <a href="https://www.facebook.com/Alpinestars/"><i class="card-icons fa-brands fa-facebook fa-2x" ></i></a>
+                  <a href="https://www.instagram.com/alpinestars/"><i class="card-icons  fa-brands fa-instagram fa-2x" ></i></a>
+                  <a href="https://www.youtube.com/@AlpinestarsVideos"><i class="card-icons  fa-brands fa-youtube fa-2x"></i></a>
+                  </div>
+                      </div>
+                      <div class="arrow">
+                          <span>&#8673;</span>
+                      </div>
+        </div>
+        
+        
+        <div class="card col-lg-2 col-md-6 col-sm-12 col-12">
+              <div class="img logo-img">
+            <img src="img/logoasw.png" alt="logo asw" style=" transform:scale(0.3); filter: brightness(0) invert(1);" >
+          </div>
+      
+          <div class="content">
+            <span class="desc text-white">Iniciada em 1986 atua
+              sob uma perspectiva
+              moderna e inspiradora.
+              Mantém as raízes,
+              propondo ao mercado o
+              design 100% brasileiro, e
+              prioriza a qualidade no
+              desenvolvimento dos
+              seus produtos.</span>
+          <div class="social-media">
+            <hr class="hr-sm">
+            <a href="https://www.facebook.com/ASWRACING"><i class="card-icons fa-brands fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/aswracing/"><i class="card-icons  fa-brands fa-instagram fa-2x"></i></a>
+            <a href="https://www.youtube.com/user/aswracingoficial"><i class="card-icons  fa-brands fa-youtube fa-2x"></i></a>
+          </div>
+          </div>
+                      <div class="arrow">
+                          <span>&#8673;</span>
+                      </div>
+        </div>
+        <div class="card col-lg-2 col-md-6 col-sm-12 col-12">
+        <div class="img logo-img">
+          <img src="img/logobell.png" alt="logo bell"  style="transform: scale(0.05);">
+        </div>
+      
+        <div class="content">
+          <span class="desc text-white">Fundada em 1954, a
+            empresa que fabricou o
+            primeiro capacete da era
+            moderna (casco rígido,
+            EPS/isopor e forração) é
+            também pioneira em muitos
+            outros avanços
+            tecnológicos e é parte
+            ilustre da história do
+            motociclismo mundial.</span>
+            <div class="social-media">
+            <hr class="hr-sm">
+            <a href="https://www.facebook.com/BellPowersports/"><i class="card-icons fa-brands fa-facebook fa-2x" ></i></a>
+            <a href="https://www.instagram.com/bellhelmets/"><i class="card-icons  fa-brands fa-instagram fa-2x"></i></a>
+            <a href="https://www.youtube.com/channel/UCHO4YJK7y2l6Z8rpX3sL70g"><i class="card-icons  fa-brands fa-youtube fa-2x"></i></a>
+          </div>
+          </div>
+      
+                      <div class="arrow">
+                          <span>&#8673;</span>
+                      </div>
+        </div>
+        
+        
+        <div class="card col-lg-2 col-md-6 col-sm-12 col-12">
+        <div class="img logo-img">
+          <img src="img/leattlogo.png" alt="logo leatt" style="transform: scale(0.2); filter: brightness(0) invert(1);">
+        </div>
+      
+        <div class="content">
+            <span class="desc text-white">Em 2006, Chris Leatt,
+            comercializou o seu
+            primeiro protetor cervical
+            Leatt® na África do Sul e
+            desde então coleciona fatos
+            impressionantes e
+            excelentes marcos de
+            inovação e reconhecimento
+            em proteção.</span>
+          <div class="social-media">
+            <hr class="hr-sm">
+            <a href="https://pt-br.facebook.com/officialleatt/"><i class="card-icons fa-brands fa-facebook fa-2x"></i></a>
+            <a href="https://www.instagram.com/officialleatt/"><i class="card-icons  fa-brands fa-instagram fa-2x"></i></a>
+            <a href="https://www.youtube.com/@OfficialLeatt"><i class="card-icons  fa-brands fa-youtube fa-2x"></i></a>
+        </div>
+        </div>
+      
+                      <div class="arrow">
+                          <span>&#8673;</span>
+                      </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Container 7 -->
+<section id="produtos-personalizados">
+<div class="container-fluid cont-7" >
+  <div class="row h-100 align-items-center">
+    <div class="col-12 col-xl-6">
+      <div class="d-flex justify-content-center" style="transform: scale(0.8);">
+        <iframe width="800" height="400" src="https://www.youtube.com/embed/M7YlAuR_JpY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-12 col-xl-6">
+      <div class="d-flex flex-column justify-content-center align-items-start vertical-align-center">
+        <h1 class="title text-left">PRODUTOS<br>PERSONALIZADOS</h1>
+        <h1 class="info-text text-left text-black">Com uma equipe dedicada em pesquisar, desenvolver e inovar em projetos, a Alta Sports, que nasceu da união entre a Silva Mattos e Star Racer possui cerca de 100 colaboradores alocados nas cidades de Mogi das Cruzes, São José dos Campos e Caçapava, que trabalham diariamente para entregar uma experiência positiva, eficiente e acima das expectativas dos nossos parceiros e clientes.</h1>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Container 8 -->
+<section id="politicas-comerciais">
+  <div class="container-fluid cont-8">
+    <h1 class="title">POLÍTICAS COMERCIAIS</h1>
+    <ul class="flex-container flx-cont-1">
+      <li class="flex-item">
+        <i class="pc-icon fa-solid fa-headset fa-2x fa-blue"></i>
+        <h3 class="circle-text">Atendimento rápido e eficiente</h3>
+      </li>
+      <li class="flex-item">
+        <i class="pc-icon fa-solid fa-comments fa-2x"></i>
+        <h3 class="circle-text">Gerentes Regionais, atendimento presencial e suporte</h3>
+      </li>
+      <li class="flex-item">
+        <i class="pc-icon fa-solid fa-arrow-pointer fa-2x"></i>
+        <h3 class="circle-text">Acompanhamento e análise de estoque</h3>
+      </li>
+    </ul>
+    <ul class="flex-container">
+      <li class="flex-item">
+        <i class="pc-icon fa-solid fa-truck fa-2x"></i>
+        <h3 class="circle-text">Eficiência na entrega do pedido</h3>
+      </li>
+      <li class="flex-item">
+        <i class="pc-icon fa-solid fa-gift fa-2x"></i>
+        <h3 class="circle-text">Garantia de 12 meses para produtos técnicos e 3 meses para casuais (mediante NF)</h3>
+      </li>
+      <li class="flex-item">
+        <i class="pc-icon fa-solid fa-hand-holding-dollar fa-2x"></i>
+        <h3 class="circle-text">Markup saudável e preços competitivos</h3>
+      </li>
+    </ul>
+    <ul class="flex-container">
+      <li class="flex-item">
+        <i class="pc-icon fa-solid pc-icon fa-solid fa-file-circle-check fa-2x"></i>
+        <h3 class="circle-text">Propostas personalizadas conforme demanda da sua loja</h3>
+      </li>
+      <li class="flex-item">
+        <i class="pc-icon fa-solid fa-box fa-2x"></i>
+        <h3 class="circle-text">Troca de produtos sem burocracia</h3>
+      </li>
+      <li class="flex-item"> 
+        <i class="pc-icon fa-solid fa-percent fa-2x"></i>
+        <h3 class="circle-text">Frete pago para os pedidos acima de R$ 4 mil (Alpinestars e Bell). Frete pago</h3>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- Container 9 -->
+<section id="b2b">
+  <div class="cont-9">
+    <div class="container">
+      <div class="row justify-content-c">
+        <div class="laptop-half col-lg-6 col-md-12 col-sm-12 col-12">
+        <div class="d-flex justify-content-center align-items-center h-100">
+          <img src="img/laptop.png" alt="laptop" class="img-fluid img-laptop">
+        </div>
+        </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 col-12 d-flex align-items-center">
+        <div>
+        <h1 class="title"> B2B</h1> 
+        <h1 class="info-text text-left text-black">Com uma equipe dedicada em pesquisar, desenvolver e inovar em projetos, a Alta Sports, que nasceu da união entre a Silva Mattos e Star Racer possui cerca de 100 colaboradores alocados nas cidades de Mogi das Cruzes, São José dos Campos e Caçapava, que trabalham diariamente para entregar uma experiência positiva, eficiente e acima
+        das expectativas dos nossos parceiros e clientes.</h1>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+   
+<!-- Container 10 -->
+<section id="cadastro">
+  <div class="container-fluid cont-10">
+    <div class="rounded-card justify-content-center text-center p-5">
+      <h3 class="title">CADASTRO COMPLETO</h3>
+        <p class="card-text">Deseja
+          fazer um cadastro completo para
+          ter acesso ao catálogo e agilizar o
+          processo?
+          <br>
+          <br>
+          Clique no botão abaixo e preencha o
+          formulário e em breve retornamos para
+          concluir seu cadastro</p>
+        <a class="cadastro-link" href="https://altasports.com.br/site/seja-revendedor#step-1">  
+          <button type="button" class="btn btn-primary btn-lg button-franqueado btn-nav">
+          SEJA UM REVENDEDOR
+          </button> 
+        </a>
+      </div>
+  </div>
+</section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script type="text/javascript">
+
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 3.5
+        }
+      }
+    })
+  </script>
+  </body>
+</html>
