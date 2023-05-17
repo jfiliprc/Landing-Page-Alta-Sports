@@ -3,7 +3,7 @@ This repository contains the code for a dynamic and conversion-focused landing p
 
 # Project Overview
 
-![Landing Page Demo](https://gifyu.com/image/SnFRW)
+<a href="https://gifyu.com/image/SnFRW"><img src="https://s12.gifyu.com/images/franqueados-page.gif" alt="franqueados-page.gif" border="0" /></a>
 
 The landing page serves as the online storefront for 'Alta Sports' brand, aiming to attract visitors and convert them into customers. It combines the following technologies to deliver an engaging and responsive experience:
 
